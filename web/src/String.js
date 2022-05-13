@@ -10,7 +10,7 @@ const String = () => {
     const handleSubmit= (e) => {
         const person = {firstName, lastName, nickName, birthday};
         setIsPending(true);
-        fetch('http://localhost:8080/pperson?nickname=Dino',{
+        fetch('http://localhost:8080/person?nickname=Dino',{
             method: 'GET',
             headers: {"Content-Type" : "application/json"},
             body: JSON.stringify(person)

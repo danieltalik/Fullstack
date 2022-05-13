@@ -43,7 +43,7 @@ public class BirthdayController {
         return result;
     }
     @PostMapping(path = "/addBirthday", consumes = "application/json")
-    public Person addPerson(@RequestBody Person person) {
+    public void addPerson(@RequestBody Person person) {
         System.out.println(person);
         person.setAge(setAge(person.getBirthday()));
 
@@ -59,8 +59,6 @@ public class BirthdayController {
                 ,person.getNickName()
                 ,person.getAge()
                 ,person.getBirthday());
-
-        return birthdayDAL.getDetails(person.getFirstName(),person.getLastName());
     }
     @PostMapping(path = "/addSoap", consumes = "application/xml",produces = "application/json")
     public PersonXML addSoap(@RequestBody String request){

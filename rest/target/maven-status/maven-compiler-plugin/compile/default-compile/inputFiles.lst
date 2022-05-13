@@ -1,0 +1,14 @@
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/FullStackDemoApplicaiton.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Models/Person.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Misc/Katas.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/BirthdayController.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/DAL/NicknameDAL.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/handlers/SOAPConversionHandler.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/DAL/IDao.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Models/SOAP/GetPersonXML.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Models/SOAP/package-info.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/DAL/BirthdayDAL.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/NicknameController.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/config/DataAccessConfig.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/config/H2Config.java
+/Users/danieltalik/Devl/fullStackApp/rest/src/main/java/com/danieltalik/fullStackApp/Models/SOAP/PersonXML.java

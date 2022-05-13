@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="33ee3049-75ed-4b07-83db-b1a068569fc0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="201" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/web/web" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="20C1yzF7r9FqeIcWDZmW6f9zrFb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/src/assets" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src/assets" />
+      <recent name="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp" />
+      <recent name="$PROJECT_DIR$/rest/src/main/resources" />
+      <recent name="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.danieltalik.fullStackApp.Models" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/src" />
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FullStackDemoApplicaiton">
+    <configuration name="FullStackDemoApplicaiton" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.danieltalik.fullStackApp.FullStackDemoApplicaiton" />
+      <module name="rest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BirthdayControllerTest.addBirthdayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BirthdayControllerTest" />
+      <option name="METHOD_NAME" value="addBirthdayTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KataTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KataTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KataTests.testDiamond5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KataTests" />
+      <option name="METHOD_NAME" value="testDiamond5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.KataTests" />
+        <item itemvalue="JUnit.KataTests.testDiamond5" />
+        <item itemvalue="JUnit.BirthdayControllerTest.addBirthdayTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33ee3049-75ed-4b07-83db-b1a068569fc0" name="Default Changelist" comment="" />
+      <created>1635534013607</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635534013607</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650396486390">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1650396486390" />
+    <state x="97" y="180" width="1240" height="720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1649861851758">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="97" y="180" width="1240" height="720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1649861851758" />
+    <state x="97" y="180" width="1240" height="720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.25.1440.875@0.25.1440.875" timestamp="1649859724164" />
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom" timestamp="1651280451347">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1651280451347" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.25.1440.817@0.25.1440.817" timestamp="1642775225623" />
+    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1650553991377" />
+    <state width="1398" height="286" key="GridCell.Tab.0.center" timestamp="1651280451346">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1651280451346" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.25.1440.817@0.25.1440.817" timestamp="1642775225620" />
+    <state width="1398" height="303" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1650553991375" />
+    <state width="1398" height="286" key="GridCell.Tab.0.left" timestamp="1651280451344">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1651280451344" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.25.1440.817@0.25.1440.817" timestamp="1642775225619" />
+    <state width="1398" height="303" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1650553991375" />
+    <state width="1398" height="286" key="GridCell.Tab.0.right" timestamp="1651280451346">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1651280451346" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.25.1440.817@0.25.1440.817" timestamp="1642775225622" />
+    <state width="1398" height="303" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1650553991376" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1651151411279">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1651151411279" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.25.1440.817@0.25.1440.817" timestamp="1642775236918" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.25.1440.819@0.25.1440.819" timestamp="1642787320596" />
+    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1650553991237" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1651151411277">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1651151411277" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.25.1440.817@0.25.1440.817" timestamp="1642775236915" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.25.1440.819@0.25.1440.819" timestamp="1642787320593" />
+    <state width="1398" height="303" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1650553991236" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1651151411277">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1651151411277" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.25.1440.817@0.25.1440.817" timestamp="1642775236913" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.25.1440.819@0.25.1440.819" timestamp="1642787320592" />
+    <state width="1398" height="303" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1650553991235" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1651151411278">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1651151411278" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.25.1440.817@0.25.1440.817" timestamp="1642775236917" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.25.1440.819@0.25.1440.819" timestamp="1642787320595" />
+    <state width="1398" height="303" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1650553991237" />
+    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1650483972217">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1650483972217" />
+    <state x="397" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1649774590002">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="296" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1649774590002" />
+    <state x="281" y="190" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1644874008802">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="281" y="190" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1644874008802" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/NicknameController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/NicknameDAL.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Misc/Katas.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/BirthdayController.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/BirthdayController.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/BirthdayDAL.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/fullStackApp$KataTests_testDiamond5.ic" NAME="KataTests.testDiamond5 Coverage Results" MODIFIED="1649861341649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

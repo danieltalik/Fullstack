@@ -1,0 +1,250 @@
+@font-face {
+	font-family: Gilroy-ExtraBold;
+	src: url("Gilroy-ExtraBold.woff");
+}
+
+@font-face {
+	font-family: Gilroy-Medium;
+	src: url("Gilroy-Medium.woff");
+}
+
+@font-face {
+	font-family: Gilroy-Regular;
+	src: url("Gilroy-Regular.woff");
+}
+
+
+#frame1BackgroundContainer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#frame1Background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+#frame2ImageContainer {
+	position: absolute;
+	height: 90px;
+	width: 428px;
+	top: 0;
+	left: 305px;
+	opacity: 0;
+	overflow:hidden;
+}
+
+#frame2Image {
+	position: absolute;
+	height: 90px;
+	width: 728px;
+	top: 0;
+	left: -305px;
+}
+
+/************ V1 ************/
+
+#frame1HeadlineContainerV1 {
+	position: absolute;
+	height: 30px;
+	width: 276px;
+	top: 9px;
+	left: 227px;
+	overflow: hidden;
+}
+
+#frame1HeadlineV1 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	font-family: Gilroy-Medium;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+}
+
+#frame1ContainerV1 {
+	position: absolute;
+	height: 28px;
+	width: 281px;
+	top: 42px;
+	left: 226px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*overflow: hidden;*/
+}
+
+
+#ctaTextContainerV1 {
+	position: relative;
+	width: 113px;
+	height: 25px;
+	top: -1px;
+	left: 0px;
+	border-radius: 12.5px;
+	background: #fff;
+	opacity: 0;
+}
+
+#ctaTextV1 {
+	position: absolute;
+	width: 113px;
+	height: 25px;
+	font-family: Gilroy-ExtraBold;
+	font-size: 10px;
+	text-align: center;
+	color: #5816bd;
+	Position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#logoContainerV1 {
+	position: relative;
+	height: 28px;
+	width: 147px;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+#logoV1 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+/************ V2 ************/
+
+#frame1HeadlineContainerV2 {
+	position: absolute;
+	height: 30px;
+	width: 275px;
+	top: 29px;
+	left: 13px;
+	overflow: hidden;
+}
+
+#frame1HeadlineV2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	font-family: Gilroy-Medium;
+	font-size: 13px;
+	line-height: 15px;
+	text-align: center;
+	color: #fff;
+	opacity: 0
+}
+
+#frame1ContainerV2 {
+	position: absolute;
+	height: 90px;
+	width: 112px;
+	top: 0px;
+	left: 307px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+sup{
+    font-size: 8px;
+    padding-left: 1px;
+    top: -3px;
+    position: relative;
+}
+#ctaTextContainerV2 {
+	position: relative;
+	width: 107px;
+	height: 20px;
+	top: 11px;
+	left: 2px;
+	border-radius: 12.5px;
+	background: #fff;
+	opacity: 0;
+}
+
+#ctaTextV2 {
+	position: absolute;
+	width: 107px;
+	height: 19px;
+	font-family: Gilroy-ExtraBold;
+	font-size: 10px;
+	text-align: center;
+	color: #5816bd;
+	Position: relative;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#logoContainerV2 {
+	position: absolute;
+	height: 20px;
+	width: 102px;
+	top: 16px;
+	left: 7px;
+	opacity: 0;
+}
+
+#logoV2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+#gradient {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 728px;
+	height: 90px;
+	/* opacity: 0; */
+}
+
+#gradient img{
+	position: absolute;
+	top: 0px;
+	left: -301px;
+	width: 728px;
+	height: 90px;
+}
+
+
+#gradient2 {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 728px;
+	height: 90px;
+	overflow: hidden;
+}
+
+
+#mask{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 728px;
+	height: 90px;
+}
+#dummyDiv {
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	width: 428px;
+	height: 90px;	
+	overflow:hidden;
+}

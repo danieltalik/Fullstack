@@ -1,0 +1,16 @@
+com/danieltalik/fullStackApp/Models/SOAP/GetPersonXML.class
+com/danieltalik/fullStackApp/DAL/IDao.class
+com/danieltalik/fullStackApp/FullStackDemoApplicaiton$1.class
+com/danieltalik/fullStackApp/DAL/NicknameDAL.class
+com/danieltalik/fullStackApp/Models/People.class
+com/danieltalik/fullStackApp/FullStackDemoApplicaiton.class
+com/danieltalik/fullStackApp/Misc/Katas.class
+com/danieltalik/fullStackApp/Controllers/BirthdayController.class
+com/danieltalik/fullStackApp/config/DataAccessConfig.class
+com/danieltalik/fullStackApp/Controllers/NicknameController.class
+com/danieltalik/fullStackApp/Models/SOAP/PersonXML.class
+com/danieltalik/fullStackApp/config/H2Config.class
+com/danieltalik/fullStackApp/handlers/SOAPConversionHandler.class
+com/danieltalik/fullStackApp/Models/Person.class
+com/danieltalik/fullStackApp/DAL/BirthdayDAL.class
+com/danieltalik/fullStackApp/Models/SOAP/package-info.class

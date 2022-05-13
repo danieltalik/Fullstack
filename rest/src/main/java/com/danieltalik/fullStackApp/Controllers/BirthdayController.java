@@ -5,9 +5,7 @@ import com.danieltalik.fullStackApp.DAL.BirthdayDAL;
 import com.danieltalik.fullStackApp.DAL.IDao;
 import com.danieltalik.fullStackApp.DAL.NicknameDAL;
 import com.danieltalik.fullStackApp.Models.Person;
-import com.danieltalik.fullStackApp.Models.SOAP.PersonXML;
 import com.danieltalik.fullStackApp.config.DataAccessConfig;
-import com.danieltalik.fullStackApp.handlers.SOAPConversionHandler;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.web.bind.annotation.*;
 import java.time.LocalDate;
@@ -25,7 +23,7 @@ public class BirthdayController {
         this.birthdayDAL = context.getBean("birthdayDAL", BirthdayDAL.class);
         this.nicknameDAL = context.getBean("nicknameDAL", NicknameDAL.class);
     }
-    @GetMapping("/allBirthdays")
+    @GetMapping(path = "/allBirthdays", produces = "application/json")
     public List<Person> getBirthdays(){
         return birthdayDAL.getAll();
     }
@@ -59,28 +57,6 @@ public class BirthdayController {
                 ,person.getNickName()
                 ,person.getAge()
                 ,person.getBirthday());
-    }
-    @PostMapping(path = "/addSoap", consumes = "application/xml",produces = "application/json")
-    public PersonXML addSoap(@RequestBody String request){
-
-        PersonXML person = new SOAPConversionHandler().convertToPOJO(request);
-        /*birthdayDAL.insertPerson(person.getFirstName()
-                ,person.getLastName()
-                ,person.getNickName()
-                ,person.getAge()
-                ,person.getBirthday());
-
-        nicknameDAL.insertPerson(
-                person.getFirstName()
-                ,person.getLastName()
-                ,person.getNickName()
-                ,person.getAge()
-                ,person.getBirthday());
-
-        return birthdayDAL.getDetails(person.getFirstName(),person.getLastName());
-
-         */
-        return person;
     }
 
     public int setAge(LocalDate birthday){

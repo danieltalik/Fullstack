@@ -8,18 +8,24 @@ const Form = () => {
     const[isPending, setIsPending] = useState(false);
 
     const handleSubmit= (e) => {
+        e.preventDefault();
         const person = {firstName, lastName, nickName, birthday};
         setIsPending(true);
         fetch('http://localhost:8080/addBirthday',{
-                    method: 'POST',
-                    headers: {"Content-Type" : "application/json"},
-                    body: JSON.stringify(person)
-                }).then(()=> {
-            console.log('New Person Added');
-            setIsPending(false);
-            window.location.reload();
-         }
-        )
+                   method: 'POST', // or 'PUT'
+                     headers: {
+                       'Content-Type': 'application/json',
+                     },
+                     body: JSON.stringify(person),
+                })
+                .then(response => response.json())
+                .then(data => {
+                  console.log('Success:', data);
+                  setIsPending(false);
+                }).catch((error) => {
+                    console.error('Error:', error);
+                  });
+                   window.location.reload();
     }
 
         return(

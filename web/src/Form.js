@@ -10,11 +10,6 @@ const Form = () => {
     const handleSubmit= (e) => {
         const person = {firstName, lastName, nickName, birthday};
         setIsPending(true);
-        fetch('http://localhost:8080/addNickname',{
-            method: 'POST',
-            headers: {"Content-Type" : "application/json"},
-            body: JSON.stringify(person)
-        })
         fetch('http://localhost:8080/addBirthday',{
                     method: 'POST',
                     headers: {"Content-Type" : "application/json"},
@@ -22,6 +17,7 @@ const Form = () => {
                 }).then(()=> {
             console.log('New Person Added');
             setIsPending(false);
+            window.location.reload();
          }
         )
     }

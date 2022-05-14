@@ -11,7 +11,7 @@ class MyComponent extends Component {
     }
 
     componentDidMount(){
-        const apiUrl = 'http://localhost:8080/allBirthdays';
+        const apiUrl = 'http://localhost:8080/everyone';
         fetch(apiUrl)
             .then((response) => response.json())
             .then(json => {

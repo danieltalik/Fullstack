@@ -11,7 +11,7 @@ const Form = () => {
         e.preventDefault();
         const person = {firstName, lastName, nickName, birthday};
         setIsPending(true);
-        fetch('http://localhost:8080/addBirthday',{
+        fetch('http://localhost:8080/addPerson',{
                    method: 'POST', // or 'PUT'
                      headers: {
                        'Content-Type': 'application/json',

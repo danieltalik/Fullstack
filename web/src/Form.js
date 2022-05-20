@@ -11,7 +11,7 @@ const Form = () => {
         e.preventDefault();
         const person = {firstName, lastName, nickName, birthday};
         setIsPending(true);
-        fetch('http://localhost:8080/addPerson',{
+        fetch('http://localhost:8080/submitNewPerson',{
                    method: 'POST', // or 'PUT'
                      headers: {
                        'Content-Type': 'application/json',
@@ -25,7 +25,8 @@ const Form = () => {
                 }).catch((error) => {
                     console.error('Error:', error);
                   });
-                   window.location.reload();
+                  window.location.reload();
+
     }
 
         return(

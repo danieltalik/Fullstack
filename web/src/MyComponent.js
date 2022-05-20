@@ -29,8 +29,8 @@ class MyComponent extends Component {
                         peopleArray.map(Person => (
                             <div>
                                 <div>
+                                    <span>{Person.nickname} </span>
                                     <span>{Person.firstName} </span>
-                                    <span>"{Person.nickName}" </span>
                                     <span>{Person.lastName}</span>
                                     <span> is {Person.age} years old and </span>
                                     <span> was born on {Person.birthday}</span>

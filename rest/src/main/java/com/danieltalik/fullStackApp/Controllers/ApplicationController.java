@@ -1,7 +1,7 @@
 package com.danieltalik.fullStackApp.Controllers;
 
 import com.danieltalik.fullStackApp.Models.PersonUpdate;
-import com.danieltalik.fullStackApp.Models.Person;
+import com.danieltalik.fullStackApp.Models.PersonRequest;
 import com.danieltalik.fullStackApp.service.PersonService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -22,7 +22,7 @@ public class ApplicationController {
     }
 
     @RequestMapping(value = "/submitNewPerson", method= RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Object> addPerson(@RequestBody Person request){
+    public ResponseEntity<Object> addPerson(@RequestBody PersonRequest request){
         service.addPerson(request);
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();

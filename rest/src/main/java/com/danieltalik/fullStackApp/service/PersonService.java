@@ -10,6 +10,7 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.temporal.ChronoUnit;
 import java.util.Date;
+import java.util.Optional;
 
 @Service
 public class PersonService {
@@ -35,4 +36,6 @@ public class PersonService {
     public Iterable<PersonUpdate> getAllPeople(){
         return repo.findAll();
     }
+
+    public Optional<PersonUpdate> getById(int id){return repo.findById(id);}
 }

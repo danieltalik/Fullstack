@@ -11,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class ApplicationController {
@@ -37,6 +39,16 @@ public class ApplicationController {
         }
         catch (Exception e){
             throw new Exception("Cannot retrieve all people");
+        }
+    }
+    @RequestMapping(value = "/getPerson/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Object> getPerson(@PathVariable("id") int id) throws Exception {
+        try{
+            Optional<PersonUpdate> result = service.getById(id);
+            return new ResponseEntity<>(result, HttpStatus.OK);
+        }
+        catch (Exception e){
+            throw new Exception("Cannot retrieve person");
         }
     }
 

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: restfulServices
+  liquibase:
+    change-log: classpath:changelog/h2/changelog.yml
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+    settings:
+      web-allow-others: true
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:file:~/test
+    username: sa

@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Dino
+      dbms: h2
+      changes:
+        - sqlFile:
+            path: create-tables.sql
+            relativeToChangelogFile: true
+        - sqlFile:
+            path: seed-data.sql
+            relativeToChangelogFile: true

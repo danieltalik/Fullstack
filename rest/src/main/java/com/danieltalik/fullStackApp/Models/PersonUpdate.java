@@ -4,7 +4,7 @@ import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @AllArgsConstructor
@@ -35,5 +35,5 @@ public class PersonUpdate {
     private int age;
 
     @Column(name = "birthday")
-    private Date birthday;
+    private LocalDate birthday;
 }

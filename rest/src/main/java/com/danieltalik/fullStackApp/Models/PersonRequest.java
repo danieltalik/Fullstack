@@ -7,18 +7,18 @@ import java.time.LocalDate;
 import java.util.List;
 
 @JsonRootName(value = "person")
-public class Person {
+public class PersonRequest {
     private String firstName;
     private String lastName;
     private LocalDate birthday;
     private int age;
     private String nickName;
 
-    public Person(){
+    public PersonRequest(){
 
     }
 
-    public Person(String firstName, String lastName, LocalDate birthday, String nickName){
+    public PersonRequest(String firstName, String lastName, LocalDate birthday, String nickName){
         this.age = age;
         this.birthday = birthday;
         this.nickName = nickName;
@@ -69,9 +69,9 @@ public class Person {
 }
 @JsonRootName(value = "people")
 class People{
-    public List<Person> people;
+    public List<PersonRequest> people;
 
-    public List<Person> getPeople() {
+    public List<PersonRequest> getPeople() {
         return people;
     }
 }

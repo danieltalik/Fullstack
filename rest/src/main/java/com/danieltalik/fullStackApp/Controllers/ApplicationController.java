@@ -1,7 +1,7 @@
 package com.danieltalik.fullStackApp.Controllers;
 
 import com.danieltalik.fullStackApp.Models.PersonUpdate;
-import com.danieltalik.fullStackApp.Models.Person;
+import com.danieltalik.fullStackApp.Models.PersonRequest;
 import com.danieltalik.fullStackApp.service.PersonService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
@@ -22,7 +24,7 @@ public class ApplicationController {
     }
 
     @RequestMapping(value = "/submitNewPerson", method= RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<Object> addPerson(@RequestBody Person request){
+    public ResponseEntity<Object> addPerson(@RequestBody PersonRequest request){
         service.addPerson(request);
         ObjectMapper mapper = new ObjectMapper();
         ObjectNode node = mapper.createObjectNode();
@@ -37,6 +39,16 @@ public class ApplicationController {
         }
         catch (Exception e){
             throw new Exception("Cannot retrieve all people");
+        }
+    }
+    @RequestMapping(value = "/getPerson/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Object> getPerson(@PathVariable("id") int id) throws Exception {
+        try{
+            Optional<PersonUpdate> result = service.getById(id);
+            return new ResponseEntity<>(result, HttpStatus.OK);
+        }
+        catch (Exception e){
+            throw new Exception("Cannot retrieve person");
         }
     }
 

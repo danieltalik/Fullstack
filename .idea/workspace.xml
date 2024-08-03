@@ -1,7 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="33ee3049-75ed-4b07-83db-b1a068569fc0" name="Default Changelist" comment="" />
+    <list default="true" id="33ee3049-75ed-4b07-83db-b1a068569fc0" name="Default Changelist" comment="Updates to rest and ui">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/components/dateParse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/target/fullStackApp-app-0.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/fullStackApp-app-0.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fullStackApp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/ApplicationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/ApplicationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/NicknameController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/PersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/BirthdayDAL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/IDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/NicknameDAL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Misc/Katas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Models/PersonUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Models/PersonUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Models/SOAP/GetPersonXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Models/SOAP/PersonXML.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Models/SOAP/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/config/DataAccessConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/config/H2Config.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/handlers/LocalDateXmlHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/handlers/SOAPConversionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/resources/Person.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/resources/Request.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/META-INF/rest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/Person.xsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/Request.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Controllers/BirthdayController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Controllers/NicknameController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/DAL/BirthdayDAL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/DAL/IDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/DAL/NicknameDAL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/FullStackDemoApplicaiton$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/FullStackDemoApplicaiton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Misc/Katas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Models/People.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Models/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Models/SOAP/GetPersonXML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Models/SOAP/PersonXML.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/Models/SOAP/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/config/DataAccessConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/config/H2Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/handlers/LocalDateXmlHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/com/danieltalik/fullStackApp/handlers/SOAPConversionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/fullStackApp-rest-0.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/rest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/surefire-reports/BirthdayControllerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/surefire-reports/TEST-BirthdayControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/test-classes/BirthdayControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/target/test-classes/KataTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/fullStackApp-web-0.0.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/fullStackApp-web-0.0.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,91 +87,128 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/web/web" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/webApp" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
   </component>
   <component name="ProjectId" id="20C1yzF7r9FqeIcWDZmW6f9zrFb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/src/assets" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/Projects/fullstack/rest",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\fullstack\rest\src\test\java" />
+      <recent name="D:\Projects\fullstack\rest\src\test" />
       <recent name="$PROJECT_DIR$/web/src/assets" />
       <recent name="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp" />
       <recent name="$PROJECT_DIR$/rest/src/main/resources" />
-      <recent name="$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\fullstack\web\src" />
+      <recent name="D:\Projects\fullstack\rest\src\main\resources\changelog" />
+      <recent name="$PROJECT_DIR$/web/src" />
+      <recent name="$PROJECT_DIR$/web" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.danieltalik.fullStackApp.Models" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/src" />
-      <recent name="$PROJECT_DIR$/web" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.FullStackDemoApplicaiton">
-    <configuration name="FullStackDemoApplicaiton" type="Application" factoryName="Application" nameIsGenerated="true">
+  <component name="RunManager" selected="Compound.RunFullStackApplication">
+    <configuration name="RESTful Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.danieltalik.fullStackApp.FullStackDemoApplicaiton" />
-      <module name="rest" />
+      <module name="fullStackApp-rest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BirthdayControllerTest.addBirthdayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BirthdayControllerTest" />
-      <option name="METHOD_NAME" value="addBirthdayTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="RunFullStackApplication" type="CompoundRunConfigurationType">
+      <toRun name="RESTful Server" type="Application" />
+      <toRun name="React.js Run Start" type="ShConfigurationType" />
+      <method v="2" />
     </configuration>
-    <configuration name="KataTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KataTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="fullStackApp-rest [liquibase:...]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="liquibase:" />
+                <option value="clear-checksums" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/rest" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
-    <configuration name="KataTests.testDiamond5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KataTests" />
-      <option name="METHOD_NAME" value="testDiamond5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="React.js Run Start" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="npm run start" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="false" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/web" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="false" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="false" />
+      <envs />
+      <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.KataTests" />
-        <item itemvalue="JUnit.KataTests.testDiamond5" />
-        <item itemvalue="JUnit.BirthdayControllerTest.addBirthdayTest" />
-      </list>
-    </recent_temporary>
+    <list>
+      <item itemvalue="Application.RESTful Server" />
+      <item itemvalue="Compound.RunFullStackApplication" />
+      <item itemvalue="Maven.fullStackApp-rest [liquibase:...]" />
+      <item itemvalue="Shell Script.React.js Run Start" />
+    </list>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -112,6 +222,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -123,91 +234,114 @@
       <option name="presentableId" value="Default" />
       <updated>1635534013607</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updates to React app and fetch and revert changes in controller">
+      <created>1652469780613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652469780613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed firefox refresh issue with posting json to rest server">
+      <created>1652473743719</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652473743719</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed defunct code from previous testing session on xml RESTful consumption">
+      <created>1652476314963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652476314963</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Refactored controller and removed redundant controller and pom dependencies">
+      <created>1652505154850</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652505154850</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated web app fetch urls with new controller endpoints from rest server">
+      <created>1652505245123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652505245123</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Optimized db interactions using hibernate and repositories">
+      <created>1653057969535</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1653057969535</updated>
+    </task>
+    <task id="LOCAL-00007" summary="change fetch endpoints">
+      <created>1653058094434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653058094434</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed rename issue with person class">
+      <created>1653058279057</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653058279057</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed component to return nickname again">
+      <created>1653060069031</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653060069031</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Updates to request models">
+      <created>1653326523421</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653326523421</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updates to rest and ui">
+      <created>1666289767255</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666289767255</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650396486390">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1650396486390" />
-    <state x="97" y="180" width="1240" height="720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1649861851758">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="97" y="180" width="1240" height="720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1649861851758" />
-    <state x="97" y="180" width="1240" height="720" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.25.1440.875@0.25.1440.875" timestamp="1649859724164" />
-    <state width="1398" height="286" key="GridCell.Tab.0.bottom" timestamp="1651280451347">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1651280451347" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.25.1440.817@0.25.1440.817" timestamp="1642775225623" />
-    <state width="1398" height="303" key="GridCell.Tab.0.bottom/0.25.1440.875@0.25.1440.875" timestamp="1650553991377" />
-    <state width="1398" height="286" key="GridCell.Tab.0.center" timestamp="1651280451346">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1651280451346" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center/0.25.1440.817@0.25.1440.817" timestamp="1642775225620" />
-    <state width="1398" height="303" key="GridCell.Tab.0.center/0.25.1440.875@0.25.1440.875" timestamp="1650553991375" />
-    <state width="1398" height="286" key="GridCell.Tab.0.left" timestamp="1651280451344">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1651280451344" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left/0.25.1440.817@0.25.1440.817" timestamp="1642775225619" />
-    <state width="1398" height="303" key="GridCell.Tab.0.left/0.25.1440.875@0.25.1440.875" timestamp="1650553991375" />
-    <state width="1398" height="286" key="GridCell.Tab.0.right" timestamp="1651280451346">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="286" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1651280451346" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right/0.25.1440.817@0.25.1440.817" timestamp="1642775225622" />
-    <state width="1398" height="303" key="GridCell.Tab.0.right/0.25.1440.875@0.25.1440.875" timestamp="1650553991376" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom" timestamp="1651151411279">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1651151411279" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.25.1440.817@0.25.1440.817" timestamp="1642775236918" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.25.1440.819@0.25.1440.819" timestamp="1642787320596" />
-    <state width="1398" height="303" key="GridCell.Tab.1.bottom/0.25.1440.875@0.25.1440.875" timestamp="1650553991237" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center" timestamp="1651151411277">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1651151411277" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.25.1440.817@0.25.1440.817" timestamp="1642775236915" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.25.1440.819@0.25.1440.819" timestamp="1642787320593" />
-    <state width="1398" height="303" key="GridCell.Tab.1.center/0.25.1440.875@0.25.1440.875" timestamp="1650553991236" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left" timestamp="1651151411277">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1651151411277" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.25.1440.817@0.25.1440.817" timestamp="1642775236913" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.25.1440.819@0.25.1440.819" timestamp="1642787320592" />
-    <state width="1398" height="303" key="GridCell.Tab.1.left/0.25.1440.875@0.25.1440.875" timestamp="1650553991235" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right" timestamp="1651151411278">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1651151411278" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.25.1440.817@0.25.1440.817" timestamp="1642775236917" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.25.1440.819@0.25.1440.819" timestamp="1642787320595" />
-    <state width="1398" height="303" key="GridCell.Tab.1.right/0.25.1440.875@0.25.1440.875" timestamp="1650553991237" />
-    <state width="720" height="450" key="XDebugger.FullValuePopup" timestamp="1650483972217">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="720" height="450" key="XDebugger.FullValuePopup/0.0.1440.900@0.0.1440.900" timestamp="1650483972217" />
-    <state x="397" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1649774590002">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="397" y="296" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1649774590002" />
-    <state x="281" y="190" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1644874008802">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="281" y="190" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1440.900@0.0.1440.900" timestamp="1644874008802" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updates to React app and fetch and revert changes in controller" />
+    <MESSAGE value="Fixed firefox refresh issue with posting json to rest server" />
+    <MESSAGE value="Removed defunct code from previous testing session on xml RESTful consumption" />
+    <MESSAGE value="Refactored controller and removed redundant controller and pom dependencies" />
+    <MESSAGE value="Updated web app fetch urls with new controller endpoints from rest server" />
+    <MESSAGE value="Optimized db interactions using hibernate and repositories" />
+    <MESSAGE value="change fetch endpoints" />
+    <MESSAGE value="fixed rename issue with person class" />
+    <MESSAGE value="fixed component to return nickname again" />
+    <MESSAGE value="Updates to request models" />
+    <MESSAGE value="Updates to rest and ui" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates to rest and ui" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/NicknameController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/NicknameDAL.java</url>
           <line>94</line>
@@ -219,19 +353,14 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/BirthdayController.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/BirthdayController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/DAL/BirthdayDAL.java</url>
           <line>43</line>
-          <option name="timeStamp" value="58" />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rest/src/main/java/com/danieltalik/fullStackApp/Controllers/ApplicationController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

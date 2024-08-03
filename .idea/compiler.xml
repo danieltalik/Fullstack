@@ -8,7 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="app" />
         <module name="rest" />
+        <module name="fullStackApp-web" />
+        <module name="fullStackApp-rest" />
         <module name="web" />
+        <module name="fullStackApp-app" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

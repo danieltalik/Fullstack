@@ -5,7 +5,6 @@ import com.danieltalik.fullStackApp.Models.PersonRequest;
 import com.danieltalik.fullStackApp.service.PersonService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -18,7 +17,6 @@ import java.util.Optional;
 public class ApplicationController {
     private PersonService service;
 
-    @Autowired
     public ApplicationController(PersonService service) {
         this.service = service;
     }

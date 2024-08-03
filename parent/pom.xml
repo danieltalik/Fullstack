@@ -11,12 +11,12 @@
     <name>fullStackApp-parent</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <maven.build.timestamp.format>yyyy.MM.dd-HH.mm.ss</maven.build.timestamp.format>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.timestamp>${maven.build.timestamp}</project.build.timestamp>
-        <java.version>11</java.version>
+        <java.version>21</java.version>
         <revision>0.0.0-SNAPSHOT</revision>
     </properties>
 <dependencyManagement>

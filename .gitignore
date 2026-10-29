@@ -1,0 +1,18 @@
+# Build output
+target/
+web/build/
+web/node/
+web/node_modules/
+
+# IDE
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+
+# OS / misc
+.DS_Store
+*.log
+.env*.local

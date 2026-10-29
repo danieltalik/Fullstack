@@ -2,15 +2,78 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>fullStackApp-web</artifactId>
-    <packaging>jar</packaging>
-    <name>fullStackApp-web</name>
+
     <parent>
-        <artifactId>fullStackApp-parent</artifactId>
         <groupId>com.danieltalik.fullstackapp</groupId>
-        <version>0.0.0-SNAPSHOT</version>
+        <artifactId>fullStackApp</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <artifactId>fullStackApp-web</artifactId>
+    <name>fullStackApp-web</name>
+    <description>React frontend, packaged as static resources for Spring Boot to serve</description>
+
+    <properties>
+        <node.version>v22.22.0</node.version>
+        <frontend-maven-plugin.version>2.0.2</frontend-maven-plugin.version>
+    </properties>
+
+    <build>
+        <resources>
+            <!-- Spring Boot serves anything under classpath:/static -->
+            <resource>
+                <directory>build</directory>
+                <targetPath>static</targetPath>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>${frontend-maven-plugin.version}</version>
+                <configuration>
+                    <nodeVersion>${node.version}</nodeVersion>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install-node-and-npm</id>
+                        <goals>
+                            <goal>install-node-and-npm</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>npm-ci</id>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>ci --no-audit --no-fund</arguments>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>test -- --run</arguments>
+                            <skip>${skipTests}</skip>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>npm-build</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>npm</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>run build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

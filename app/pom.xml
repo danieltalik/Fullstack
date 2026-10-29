@@ -3,18 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>fullStackApp-app</artifactId>
-    <packaging>jar</packaging>
-    <groupId>com.danieltalik.fullstackapp</groupId>
-    <version>${revision}</version>
-    <name>fullStackApp-app</name>
 
     <parent>
-        <artifactId>fullStackApp-parent</artifactId>
         <groupId>com.danieltalik.fullstackapp</groupId>
-        <version>${revision}</version>
-        <relativePath>../parent/pom.xml</relativePath>
+        <artifactId>fullStackApp</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <artifactId>fullStackApp-app</artifactId>
+    <name>fullStackApp-app</name>
+    <description>Runnable jar bundling the REST API and the React frontend</description>
+
     <dependencies>
         <dependency>
             <groupId>com.danieltalik.fullstackapp</groupId>
@@ -25,23 +24,25 @@
             <artifactId>fullStackApp-web</artifactId>
         </dependency>
     </dependencies>
+
     <build>
+        <finalName>fullStackApp</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.danieltalik.fullStackApp.FullStackDemoApplicaiton</mainClass>
+                    <mainClass>com.danieltalik.fullstackapp.FullStackDemoApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
                         <goals>
                             <goal>build-info</goal>
+                            <goal>repackage</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
-
 </project>

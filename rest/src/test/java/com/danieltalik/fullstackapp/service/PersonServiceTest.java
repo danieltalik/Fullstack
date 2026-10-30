@@ -1,27 +1,113 @@
 package com.danieltalik.fullstackapp.service;
 
+import com.danieltalik.fullstackapp.model.Person;
+import com.danieltalik.fullstackapp.model.PersonRequest;
+import com.danieltalik.fullstackapp.model.PersonResponse;
+import com.danieltalik.fullstackapp.repository.PersonRepository;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
+import org.springframework.data.domain.Sort;
+import org.springframework.http.HttpStatus;
 
 import java.time.Clock;
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
+import java.util.List;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.Assertions.tuple;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 class PersonServiceTest {
 
-    private final Clock clock = Clock.fixed(Instant.parse("2026-09-20T12:00:00Z"), ZoneOffset.UTC);
-    private final PersonService service = new PersonService(null, clock);
+    private static final LocalDate TODAY = LocalDate.of(2026, 9, 20);
 
-    @Test
-    void ageIncreasesOnTheBirthday() {
-        assertThat(service.ageOf(LocalDate.of(1988, 9, 20))).isEqualTo(38);
-        assertThat(service.ageOf(LocalDate.of(1988, 9, 21))).isEqualTo(37);
+    private final PersonRepository repository = mock(PersonRepository.class);
+    private final PersonService service = new PersonService(repository, clockAt(TODAY));
+
+    private static Clock clockAt(LocalDate date) {
+        return Clock.fixed(date.atTime(12, 0).toInstant(ZoneOffset.UTC), ZoneOffset.UTC);
+    }
+
+    @ParameterizedTest(name = "born {0}, on {1} -> {2}")
+    @CsvSource({
+            // birthday,  today,      expected age
+            "1988-09-20, 2026-09-20, 38",   // on the birthday
+            "1988-09-20, 2026-09-19, 37",   // day before
+            "1988-09-20, 2026-09-21, 38",   // day after
+            "1988-12-31, 2027-01-01, 38",   // across new year
+            "1988-01-01, 2026-12-31, 38",   // last day before the next birthday
+            "2026-09-20, 2026-09-20, 0",    // born today
+            "2025-09-21, 2026-09-20, 0",    // one day short of a year
+            "2025-09-20, 2026-09-20, 1",    // exactly one year
+            "2000-02-29, 2025-02-28, 24",   // leap-day birthday, non-leap year, before March
+            "2000-02-29, 2025-03-01, 25",   // leap-day birthday counts from March 1st
+            "2000-02-29, 2028-02-29, 28",   // leap-day birthday in a leap year
+            "1815-12-10, 2026-09-20, 210"   // very old dates
+    })
+    void calculatesAge(LocalDate birthday, LocalDate today, int expectedAge) {
+        PersonService serviceOnThatDay = new PersonService(repository, clockAt(today));
+
+        assertThat(serviceOnThatDay.ageOf(birthday)).isEqualTo(expectedAge);
+    }
+
+    @ParameterizedTest(name = "\"{0}\" is stored as \"Dino\"")
+    @ValueSource(strings = {"Dino", " Dino", "Dino ", "  Dino  ", "\tDino\n"})
+    void trimsWhitespaceBeforeSaving(String nickname) {
+        // Give the saved entity an id, as the database would.
+        when(repository.save(any())).thenAnswer(inv -> withId(inv.getArgument(0), 1));
+
+        PersonResponse saved = service.addPerson(new PersonRequest(
+                " Daniel", "Talik ", nickname, LocalDate.of(1988, 9, 20)));
+
+        assertThat(saved.firstName()).isEqualTo("Daniel");
+        assertThat(saved.lastName()).isEqualTo("Talik");
+        assertThat(saved.nickname()).isEqualTo("Dino");
+        assertThat(saved.age()).isEqualTo(38);
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {0, -1, 2, 999, Integer.MAX_VALUE})
+    void getByIdThrowsNotFoundForUnknownIds(int id) {
+        when(repository.findById(id)).thenReturn(Optional.empty());
+
+        assertThatThrownBy(() -> service.getById(id))
+                .isInstanceOf(PersonNotFoundException.class)
+                .satisfies(ex -> {
+                    PersonNotFoundException notFound = (PersonNotFoundException) ex;
+                    assertThat(notFound.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
+                    assertThat(notFound.getBody().getDetail()).isEqualTo("No person with id " + id);
+                });
     }
 
     @Test
-    void newbornIsZero() {
-        assertThat(service.ageOf(LocalDate.of(2026, 9, 20))).isZero();
+    void getAllPeopleIsSortedByIdAndIncludesAge() {
+        when(repository.findAll(Sort.by("id"))).thenReturn(List.of(
+                withId(new Person("Daniel", "Talik", "Dino", LocalDate.of(1988, 9, 20)), 1),
+                withId(new Person("Ada", "Lovelace", "Countess", LocalDate.of(1815, 12, 10)), 2)));
+
+        assertThat(service.getAllPeople())
+                .extracting(PersonResponse::id, PersonResponse::nickname, PersonResponse::age)
+                .containsExactly(
+                        tuple(1, "Dino", 38),
+                        tuple(2, "Countess", 210));
+    }
+
+    /** Person's id is generated by the database; set it the way JPA would. */
+    private static Person withId(Person person, int id) {
+        try {
+            var field = Person.class.getDeclaredField("id");
+            field.setAccessible(true);
+            field.set(person, id);
+            return person;
+        } catch (ReflectiveOperationException e) {
+            throw new IllegalStateException(e);
+        }
     }
 }
